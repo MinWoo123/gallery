@@ -2,22 +2,23 @@
   <title>title</title>
 </head>
 
-<body>
+<template name="layout">
 <div class="container">
   <!--navigation-->
   {{> navbar}}
-  <!--carousel-->
-  {{> carousel}}
-  <!--input-->
-  {{> insertData}}
-  <!--table-->
-  {{> table}}
-  <!--footer-->
-
-  <!--modal-->
-  {{> modal}}
+    {{>yield}}
 </div>
-</body>
+</template>
 
+<template name="home">
+    <!--carousel-->
+    {{> carousel}}
+    <!--input-->
+    {{> insertData}}
+    <!--table-->
+    {{> table}}
+    <!--footer-->
 
-
+    <!--modal-->
+    {{> modal}}
+</template>
