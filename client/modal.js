@@ -33,5 +33,9 @@ Template.modal.helpers({
   comments: function() {
     var obj = Session.get('selectedData') || {};
     return obj.comments;
+  },
+  pick: function () {
+    var obj = Session.get('selectedData') || {};
+    return obj.image;
   }
 });

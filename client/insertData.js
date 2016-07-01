@@ -50,8 +50,6 @@ Template.insertData.events(
         $('#inpTextarea').val("");
         $('#inpFile').val("");
       }
-
-
     }
   }
 );
